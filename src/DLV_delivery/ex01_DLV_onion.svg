@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1040" viewBox="0 0 1440 1040">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<style>text{font-family:Arial,DejaVu Sans,sans-serif;fill:#16324F} .title{font-size:30px;font-weight:bold} .group{font-size:19px;font-weight:bold} .item{font-size:16px} .hint{font-size:14px;fill:#50667A}</style>
+<text x="56" y="63" class="title">Луковичная диаграмма — система доставки заказов</text>
+<text x="56" y="92" class="hint">Слои отражают степень взаимодействия с продуктом, а не уровень влияния на проект</text>
+<circle cx="700" cy="520" r="435" fill="#E7F0F8" stroke="#FFFFFF" stroke-width="5"/>
+<circle cx="700" cy="520" r="337" fill="#CFE8E7" stroke="#FFFFFF" stroke-width="5"/>
+<circle cx="700" cy="520" r="245" fill="#B9D9F4" stroke="#FFFFFF" stroke-width="5"/>
+<circle cx="700" cy="520" r="151" fill="#2C668F" stroke="#FFFFFF" stroke-width="5"/>
+<text x="346.5" y="355.2" text-anchor="middle" dominant-baseline="middle" class="item">Регуляторы *</text>
+<text x="700.0" y="120.5" text-anchor="middle" dominant-baseline="middle" class="item">Основатели</text>
+<text x="700.0" y="139.5" text-anchor="middle" dominant-baseline="middle" class="item">стартапа</text>
+<text x="1053.5" y="345.7" text-anchor="middle" dominant-baseline="middle" class="item">Получатель</text>
+<text x="1053.5" y="364.7" text-anchor="middle" dominant-baseline="middle" class="item">заказа</text>
+<text x="1019.5" y="734.2" text-anchor="middle" dominant-baseline="middle" class="item">Провайдер</text>
+<text x="1019.5" y="753.2" text-anchor="middle" dominant-baseline="middle" class="item">хостинга *</text>
+<text x="632.3" y="894.6" text-anchor="middle" dominant-baseline="middle" class="item">Разработчики</text>
+<text x="632.3" y="913.6" text-anchor="middle" dominant-baseline="middle" class="item">и тестировщики *</text>
+<text x="323.3" y="611.4" text-anchor="middle" dominant-baseline="middle" class="item">Специалист</text>
+<text x="323.3" y="630.4" text-anchor="middle" dominant-baseline="middle" class="item">сопровождения *</text>
+<text x="498.5" y="309.0" text-anchor="middle" dominant-baseline="middle" class="item">Магазины и</text>
+<text x="498.5" y="328.0" text-anchor="middle" dominant-baseline="middle" class="item">предприятия питания</text>
+<text x="933.5" y="347.0" text-anchor="middle" dominant-baseline="middle" class="item">Бухгалтерия</text>
+<text x="933.5" y="366.0" text-anchor="middle" dominant-baseline="middle" class="item">службы доставки</text>
+<text x="851.0" y="752.2" text-anchor="middle" dominant-baseline="middle" class="item">Бухгалтерская</text>
+<text x="851.0" y="771.2" text-anchor="middle" dominant-baseline="middle" class="item">ИТ-система</text>
+<text x="466.5" y="674.0" text-anchor="middle" dominant-baseline="middle" class="item">Картографический</text>
+<text x="466.5" y="693.0" text-anchor="middle" dominant-baseline="middle" class="item">сервис *</text>
+<text x="573.4" y="369.1" text-anchor="middle" dominant-baseline="middle" class="item">Оператор</text>
+<text x="839.3" y="380.7" text-anchor="middle" dominant-baseline="middle" class="item">Курьер</text>
+<text x="839.3" y="659.3" text-anchor="middle" dominant-baseline="middle" class="item">Диспетчер</text>
+<text x="565.6" y="664.1" text-anchor="middle" dominant-baseline="middle" class="item">Администратор</text>
+<text x="700" y="511" text-anchor="middle" class="group" fill="#FFFFFF" style="fill:#FFFFFF">Система</text>
+<text x="700" y="540" text-anchor="middle" class="group" style="fill:#FFFFFF">доставки</text>
+<rect x="42" y="784" width="474" height="206" rx="14" fill="#FFFFFF" stroke="#C7D7E2"/>
+<text x="64" y="817" class="group">Обозначения слоёв</text>
+<rect x="65" y="832" width="18" height="18" rx="4" fill="#2C668F" stroke="#9EB1BD"/>
+<text x="95" y="847" class="item">Центр — разрабатываемая система</text>
+<rect x="65" y="869" width="18" height="18" rx="4" fill="#B9D9F4" stroke="#9EB1BD"/>
+<text x="95" y="884" class="item">Прямые пользователи</text>
+<rect x="65" y="906" width="18" height="18" rx="4" fill="#CFE8E7" stroke="#9EB1BD"/>
+<text x="95" y="921" class="item">Взаимодействующие стороны / системы</text>
+<rect x="65" y="943" width="18" height="18" rx="4" fill="#E7F0F8" stroke="#9EB1BD"/>
+<text x="95" y="958" class="item">Внешние и косвенно затрагиваемые стороны</text>
+<text x="554" y="980" class="hint">* Дополнительные потенциальные стороны, не указанные в исходном описании задачи.</text>
+<text x="554" y="1002" class="hint">Картографическая интеграция — гипотеза; согласование требуется отдельно.</text>
+</svg>
