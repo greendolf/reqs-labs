@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="900" viewBox="0 0 1480 900" font-family="Calibri,Arial,sans-serif">
+<rect width="1480" height="900" fill="white"/>
+<rect x="0" y="0" width="1480" height="46" fill="#16324F"/>
+<text x="16" y="29" font-size="17" font-weight="bold" fill="white">ER-модель системы онлайн-записи в барбершоп (BAR) — логическая</text>
+<text x="1466" y="29" font-size="10" fill="#9DB2CE" text-anchor="end">pim_05 · Exercise 03 · логическая модель данных · PIM_05 · 19.11.2026</text>
+<g><rect x="20" y="70" width="200" height="63" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="20" y="70" width="200" height="26" fill="#17365D" rx="3"/>
+<text x="28" y="88" font-size="13" font-weight="bold" fill="white">Тип услуги</text>
+<text x="28" y="108" font-size="11.5" font-weight="bold" fill="#253545">PK SVC_TYPE_ID</text>
+<line x1="20" y1="111" x2="220" y2="111" stroke="#17365D" stroke-width="0.7"/>
+<text x="28" y="124" font-size="11" fill="#253545">NAME: парикмах./космет.</text>
+</g>
+<g><rect x="280" y="70" width="220" height="123" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="280" y="70" width="220" height="26" fill="#17365D" rx="3"/>
+<text x="288" y="88" font-size="13" font-weight="bold" fill="white">Услуга</text>
+<text x="288" y="108" font-size="11.5" font-weight="bold" fill="#253545">PK SVC_ID</text>
+<line x1="280" y1="111" x2="500" y2="111" stroke="#17365D" stroke-width="0.7"/>
+<text x="288" y="124" font-size="11" fill="#253545">NAME</text>
+<rect x="281" y="128" width="218" height="15" fill="#EAF1F8"/>
+<text x="288" y="139" font-size="11" fill="#253545">TYPE → Тип услуги</text>
+<text x="288" y="154" font-size="11" fill="#253545">DURATION, мин</text>
+<rect x="281" y="158" width="218" height="15" fill="#EAF1F8"/>
+<text x="288" y="169" font-size="11" fill="#253545">PRICE, ₽</text>
+<text x="288" y="184" font-size="11" fill="#253545">ARCH (архивная)</text>
+</g>
+<g><rect x="570" y="80" width="230" height="78" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="570" y="80" width="230" height="26" fill="#17365D" rx="3"/>
+<text x="578" y="98" font-size="13" font-weight="bold" fill="white">Услуга мастера (развязка М:М)</text>
+<text x="578" y="118" font-size="11.5" font-weight="bold" fill="#253545">PK MS_ID</text>
+<line x1="570" y1="121" x2="800" y2="121" stroke="#17365D" stroke-width="0.7"/>
+<text x="578" y="134" font-size="11" fill="#253545">MS_MASTER → Мастер</text>
+<rect x="571" y="138" width="228" height="15" fill="#EAF1F8"/>
+<text x="578" y="149" font-size="11" fill="#253545">MS_SVC → Услуга</text>
+</g>
+<g><rect x="870" y="70" width="220" height="108" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="870" y="70" width="220" height="26" fill="#17365D" rx="3"/>
+<text x="878" y="88" font-size="13" font-weight="bold" fill="white">Мастер</text>
+<text x="878" y="108" font-size="11.5" font-weight="bold" fill="#253545">PK MASTER_ID</text>
+<line x1="870" y1="111" x2="1090" y2="111" stroke="#17365D" stroke-width="0.7"/>
+<text x="878" y="124" font-size="11" fill="#253545">FIO</text>
+<rect x="871" y="128" width="218" height="15" fill="#EAF1F8"/>
+<text x="878" y="139" font-size="11" fill="#253545">SPEC специализация</text>
+<text x="878" y="154" font-size="11" fill="#253545">SITE точка</text>
+<rect x="871" y="158" width="218" height="15" fill="#EAF1F8"/>
+<text x="878" y="169" font-size="11" fill="#253545">ACTIVE</text>
+</g>
+<g><rect x="870" y="330" width="230" height="93" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="870" y="330" width="230" height="26" fill="#17365D" rx="3"/>
+<text x="878" y="348" font-size="13" font-weight="bold" fill="white">Слот расписания</text>
+<text x="878" y="368" font-size="11.5" font-weight="bold" fill="#253545">PK SLOT_ID</text>
+<line x1="870" y1="371" x2="1100" y2="371" stroke="#17365D" stroke-width="0.7"/>
+<text x="878" y="384" font-size="11" fill="#253545">MASTER → Мастер</text>
+<rect x="871" y="388" width="228" height="15" fill="#EAF1F8"/>
+<text x="878" y="399" font-size="11" fill="#253545">DATE / START / END</text>
+<text x="878" y="414" font-size="11" fill="#253545">STATUS своб./занят/блок</text>
+</g>
+<g><rect x="20" y="340" width="220" height="108" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="20" y="340" width="220" height="26" fill="#17365D" rx="3"/>
+<text x="28" y="358" font-size="13" font-weight="bold" fill="white">Клиент</text>
+<text x="28" y="378" font-size="11.5" font-weight="bold" fill="#253545">PK CLIENT_ID</text>
+<line x1="20" y1="381" x2="240" y2="381" stroke="#17365D" stroke-width="0.7"/>
+<text x="28" y="394" font-size="11" fill="#253545">FIO (у посетителя пусто)</text>
+<rect x="21" y="398" width="218" height="15" fill="#EAF1F8"/>
+<text x="28" y="409" font-size="11" fill="#253545">PHONE — ключ визита</text>
+<text x="28" y="424" font-size="11" fill="#253545">CHANNEL → канал</text>
+<rect x="21" y="428" width="218" height="15" fill="#EAF1F8"/>
+<text x="28" y="439" font-size="11" fill="#253545">REG флаг регистрации</text>
+</g>
+<g><rect x="450" y="310" width="250" height="123" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="450" y="310" width="250" height="26" fill="#17365D" rx="3"/>
+<text x="458" y="328" font-size="13" font-weight="bold" fill="white">Запись</text>
+<text x="458" y="348" font-size="11.5" font-weight="bold" fill="#253545">PK BOOK_ID</text>
+<line x1="450" y1="351" x2="700" y2="351" stroke="#17365D" stroke-width="0.7"/>
+<text x="458" y="364" font-size="11" fill="#253545">CLIENT → Клиент</text>
+<rect x="451" y="368" width="248" height="15" fill="#EAF1F8"/>
+<text x="458" y="379" font-size="11" fill="#253545">SLOT → Слот</text>
+<text x="458" y="394" font-size="11" fill="#253545">SVC → Услуга</text>
+<rect x="451" y="398" width="248" height="15" fill="#EAF1F8"/>
+<text x="458" y="409" font-size="11" fill="#253545">STATUS: новая/подтв/оказана/отмена</text>
+<text x="458" y="424" font-size="11" fill="#253545">CHANNEL → канал напоминаний</text>
+</g>
+<g><rect x="170" y="630" width="230" height="108" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="170" y="630" width="230" height="26" fill="#17365D" rx="3"/>
+<text x="178" y="648" font-size="13" font-weight="bold" fill="white">Оплата</text>
+<text x="178" y="668" font-size="11.5" font-weight="bold" fill="#253545">PK PAY_ID</text>
+<line x1="170" y1="671" x2="400" y2="671" stroke="#17365D" stroke-width="0.7"/>
+<text x="178" y="684" font-size="11" fill="#253545">BOOK → Запись</text>
+<rect x="171" y="688" width="228" height="15" fill="#EAF1F8"/>
+<text x="178" y="699" font-size="11" fill="#253545">AMOUNT / METHOD</text>
+<text x="178" y="714" font-size="11" fill="#253545">DATE приёма</text>
+<rect x="171" y="718" width="228" height="15" fill="#EAF1F8"/>
+<text x="178" y="729" font-size="11" fill="#253545">SENT в бухгалтерию</text>
+</g>
+<g><rect x="510" y="640" width="215" height="108" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="510" y="640" width="215" height="26" fill="#17365D" rx="3"/>
+<text x="518" y="658" font-size="13" font-weight="bold" fill="white">Отзыв</text>
+<text x="518" y="678" font-size="11.5" font-weight="bold" fill="#253545">PK REV_ID</text>
+<line x1="510" y1="681" x2="725" y2="681" stroke="#17365D" stroke-width="0.7"/>
+<text x="518" y="694" font-size="11" fill="#253545">BOOK → Запись</text>
+<rect x="511" y="698" width="213" height="15" fill="#EAF1F8"/>
+<text x="518" y="709" font-size="11" fill="#253545">RATING 1..5</text>
+<text x="518" y="724" font-size="11" fill="#253545">TEXT предложение</text>
+<rect x="511" y="728" width="213" height="15" fill="#EAF1F8"/>
+<text x="518" y="739" font-size="11" fill="#253545">PUB</text>
+</g>
+<g><rect x="830" y="600" width="240" height="108" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="830" y="600" width="240" height="26" fill="#17365D" rx="3"/>
+<text x="838" y="618" font-size="13" font-weight="bold" fill="white">Уведомление</text>
+<text x="838" y="638" font-size="11.5" font-weight="bold" fill="#253545">PK NTF_ID</text>
+<line x1="830" y1="641" x2="1070" y2="641" stroke="#17365D" stroke-width="0.7"/>
+<text x="838" y="654" font-size="11" fill="#253545">BOOK → Запись</text>
+<rect x="831" y="658" width="238" height="15" fill="#EAF1F8"/>
+<text x="838" y="669" font-size="11" fill="#253545">CHANNEL → канал</text>
+<text x="838" y="684" font-size="11" fill="#253545">TEXT</text>
+<rect x="831" y="688" width="238" height="15" fill="#EAF1F8"/>
+<text x="838" y="699" font-size="11" fill="#253545">PLAN / SENT</text>
+</g>
+<g><rect x="1210" y="640" width="190" height="63" fill="white" stroke="#17365D" stroke-width="1.6" rx="3"/>
+<rect x="1210" y="640" width="190" height="26" fill="#17365D" rx="3"/>
+<text x="1218" y="658" font-size="13" font-weight="bold" fill="white">Канал связи</text>
+<text x="1218" y="678" font-size="11.5" font-weight="bold" fill="#253545">PK CH_ID</text>
+<line x1="1210" y1="681" x2="1400" y2="681" stroke="#17365D" stroke-width="0.7"/>
+<text x="1218" y="694" font-size="11" fill="#253545">NAME TG/WA/VK/СМС</text>
+</g>
+<path d="M 220 100 L 280 100" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="229.0" y1="95.0" x2="229.0" y2="105.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 267.0 100.0 L 280.0 94.0 M 267.0 100.0 L 280.0 106.0 M 267.0 100.0 L 280 100" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="246.0" y="94.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="254.0" y="94.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="250.0" y="60.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">классифицирует</text>
+<path d="M 500 115 L 570 115" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="509.0" y1="110.0" x2="509.0" y2="120.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 557.0 115.0 L 570.0 109.0 M 557.0 115.0 L 570.0 121.0 M 557.0 115.0 L 570 115" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="526.0" y="109.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="544.0" y="109.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="535.0" y="60.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">привязана</text>
+<path d="M 870 110 L 838 110 L 838 140 L 800 140" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="861.0" y1="115.0" x2="861.0" y2="105.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 813.0 140.0 L 800.0 146.0 M 813.0 140.0 L 800.0 134.0 M 813.0 140.0 L 800 140" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="844.0" y="104.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="826.0" y="134.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="838.0" y="103.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">привязан</text>
+<path d="M 985 178 L 985 330" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="990.0" y1="187.0" x2="980.0" y2="187.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 985.0 317.0 L 991.0 330.0 M 985.0 317.0 L 979.0 330.0 M 985.0 317.0 L 985 330" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="985.0" y="198.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="985.0" y="298.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="1047.0" y="314.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">ведёт расписание</text>
+<path d="M 240 380 L 345 380 L 345 355 L 450 355" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="249.0" y1="375.0" x2="249.0" y2="385.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 437.0 355.0 L 450.0 349.0 M 437.0 355.0 L 450.0 361.0 M 437.0 355.0 L 450 355" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="266.0" y="374.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="424.0" y="349.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="345.0" y="359.5" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">оформляет</text>
+<path d="M 870 380 L 785 380 L 785 345 L 700 345" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="861.0" y1="385.0" x2="861.0" y2="375.0" stroke="#3D5A80" stroke-width="1.6"/>
+<circle cx="708.0" cy="345.0" r="4.2" fill="white" stroke="#3D5A80" stroke-width="1.4"/>
+<line x1="715.0" y1="340.5" x2="715.0" y2="349.5" stroke="#3D5A80" stroke-width="1.5"/>
+<text x="844.0" y="374.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="726.0" y="339.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">0..1</text>
+<text x="785.0" y="354.5" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">занимает</text>
+<path d="M 575 310 L 575 255 L 390 255 L 390 193" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<path d="M 575.0 297.0 L 581.0 310.0 M 575.0 297.0 L 569.0 310.0 M 575.0 297.0 L 575 310" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="395.0" y1="202.0" x2="385.0" y2="202.0" stroke="#3D5A80" stroke-width="1.6"/>
+<text x="575.0" y="278.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="390.0" y="213.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="482.5" y="247.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">выбрана</text>
+<path d="M 500 433 L 500 545 L 285 545 L 285 630" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="505.0" y1="442.0" x2="495.0" y2="442.0" stroke="#3D5A80" stroke-width="1.6"/>
+<circle cx="285.0" cy="622.0" r="4.2" fill="white" stroke="#3D5A80" stroke-width="1.4"/>
+<line x1="280.5" y1="615.0" x2="289.5" y2="615.0" stroke="#3D5A80" stroke-width="1.5"/>
+<text x="500.0" y="453.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="285.0" y="598.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">0..1</text>
+<text x="428.5" y="585.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">подтверждается</text>
+<path d="M 615 433 L 615 640" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="620.0" y1="442.0" x2="610.0" y2="442.0" stroke="#3D5A80" stroke-width="1.6"/>
+<circle cx="615.0" cy="632.0" r="4.2" fill="white" stroke="#3D5A80" stroke-width="1.4"/>
+<line x1="610.5" y1="625.0" x2="619.5" y2="625.0" stroke="#3D5A80" stroke-width="1.5"/>
+<text x="615.0" y="453.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="615.0" y="608.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">0..1</text>
+<text x="663.0" y="536.5" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">оценивается</text>
+<path d="M 665 433 L 665 515 L 950 515 L 950 600" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="670.0" y1="442.0" x2="660.0" y2="442.0" stroke="#3D5A80" stroke-width="1.6"/>
+<path d="M 950.0 587.0 L 956.0 600.0 M 950.0 587.0 L 944.0 600.0 M 950.0 587.0 L 950 600" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<text x="665.0" y="453.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="950.0" y="568.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="807.5" y="507.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">информируется</text>
+<path d="M 1070 680 L 1210 680" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<path d="M 1083.0 680.0 L 1070.0 686.0 M 1083.0 680.0 L 1070.0 674.0 M 1083.0 680.0 L 1070 680" stroke="#3D5A80" stroke-width="1.5" fill="none"/>
+<line x1="1201.0" y1="685.0" x2="1201.0" y2="675.0" stroke="#3D5A80" stroke-width="1.6"/>
+<text x="1096.0" y="674.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">М</text>
+<text x="1184.0" y="674.0" font-size="11.5" font-weight="bold" fill="#17365D" text-anchor="middle">1</text>
+<text x="1140.0" y="672.0" font-size="12" font-weight="bold" fill="#17365D" text-anchor="middle" stroke="white" stroke-width="3.5" paint-order="stroke">через канал</text>
+<rect x="20" y="790" width="1100" height="84" fill="none" stroke="#17365D" stroke-dasharray="4 3" rx="4"/>
+<text x="30" y="809" font-size="10.5" fill="#253545">Обозначения: PK — ключ; метки 1 / М / 0..1 и «лапка» — кратность связи; → — внешний ключ атрибута.</text>
+<text x="30" y="827" font-size="10.5" fill="#253545">Услуга и Мастер связаны М:М через таблицу-развязку «Услуга мастера».</text>
+<text x="30" y="845" font-size="10.5" fill="#253545">Ссылки CLIENT.CHANNEL и BOOK.CHANNEL на «Канал связи» не показаны — дублируют NTF.CHANNEL (читаемость).</text>
+<text x="30" y="863" font-size="10.5" fill="#253545">Физического удаления нет (CRUD-матрица упр. 01): Услуга/Мастер — архив, Запись — статус «отменена».</text>
+</svg>
