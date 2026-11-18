@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="860" viewBox="0 0 1180 860" font-family="Carlito, 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#16324F"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1180" height="860" fill="white"/>
+  <text x="40" y="40" font-size="21" font-weight="bold" fill="#16324F">Контекстная диаграмма to be — «Система управления заказами службы доставки»</text>
+  <text x="40" y="62" font-size="13" fill="#595959">Упражнение 01 (pim_03) · Версия PIM_03 · 18.11.2026 · внешние сущности — ID из каталога ex00_DLV_stakeholders.xlsx</text>
+
+  <!-- system -->
+  <ellipse cx="590" cy="400" rx="168" ry="82" fill="#16324F" stroke="#0d1f30" stroke-width="2"/>
+  <text x="590" y="382" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">Система управления</text>
+  <text x="590" y="403" text-anchor="middle" font-size="16" font-weight="bold" fill="#ffffff">заказами службы доставки</text>
+  <text x="590" y="425" text-anchor="middle" font-size="12" fill="#c9d7e6">(включая мобильное приложение курьера)</text>
+
+  <!-- entities -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="50" y="96" width="250" height="62" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="175" y="120" font-weight="bold" fill="#16324F">Магазины и предприятия</text>
+    <text x="175" y="137" fill="#16324F">питания (поставщик)</text>
+    <text x="175" y="152" font-size="10" fill="#7a8a99">st00600</text>
+
+    <rect x="40" y="300" width="230" height="56" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="155" y="324" font-weight="bold" fill="#16324F">Оператор заказов</text>
+    <text x="155" y="342" font-size="10" fill="#7a8a99">st00200</text>
+
+    <rect x="40" y="470" width="230" height="56" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="155" y="494" font-weight="bold" fill="#16324F">Получатель заказа</text>
+    <text x="155" y="512" font-size="10" fill="#7a8a99">st00700</text>
+
+    <rect x="890" y="96" width="230" height="56" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="1005" y="120" font-weight="bold" fill="#16324F">Курьер</text>
+    <text x="1005" y="138" font-size="10" fill="#7a8a99">st00300 · мобильное приложение</text>
+
+    <rect x="890" y="300" width="230" height="56" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="1005" y="324" font-weight="bold" fill="#16324F">Диспетчер</text>
+    <text x="1005" y="342" font-size="10" fill="#7a8a99">st00400</text>
+
+    <rect x="890" y="470" width="230" height="56" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="1005" y="494" font-weight="bold" fill="#16324F">Администратор</text>
+    <text x="1005" y="512" font-size="10" fill="#7a8a99">st00500</text>
+
+    <rect x="430" y="700" width="260" height="62" rx="8" fill="#EAF1F8" stroke="#16324F" stroke-width="1.5"/>
+    <text x="560" y="724" font-weight="bold" fill="#16324F">Бухгалтерская ИТ-система</text>
+    <text x="560" y="741" fill="#16324F">службы доставки</text>
+    <text x="560" y="756" font-size="10" fill="#7a8a99">st00900</text>
+
+    <rect x="840" y="700" width="260" height="62" rx="8" fill="#F4F6F8" stroke="#7a8a99" stroke-width="1.5" stroke-dasharray="7 4"/>
+    <text x="970" y="724" font-weight="bold" fill="#595959">Картографический сервис</text>
+    <text x="970" y="741" fill="#595959">(плановая интеграция)</text>
+    <text x="970" y="756" font-size="10" fill="#7a8a99">st01400</text>
+  </g>
+
+  <!-- flows -->
+  <g stroke="#8aa0b5" stroke-width="1.6" fill="none">
+    <line x1="175" y1="158" x2="158" y2="300" marker-end="url(#arr)"/>
+  </g>
+  <text x="192" y="230" font-size="12" fill="#595959">заказ: состав, точки,</text>
+  <text x="192" y="245" font-size="12" fill="#595959">сроки (звонки, мессенджеры)</text>
+
+  <g stroke="#16324F" stroke-width="1.8" fill="none">
+    <line x1="270" y1="322" x2="432" y2="376" marker-end="url(#arr)"/>
+    <line x1="718" y1="343" x2="935" y2="152" marker-end="url(#arr)"/>
+    <line x1="960" y1="152" x2="735" y2="332" marker-end="url(#arr)"/>
+    <line x1="890" y1="316" x2="758" y2="382" marker-end="url(#arr)"/>
+    <line x1="758" y1="404" x2="890" y2="340" marker-end="url(#arr)"/>
+    <line x1="890" y1="492" x2="742" y2="449" marker-end="url(#arr)"/>
+    <line x1="560" y1="482" x2="545" y2="700" marker-end="url(#arr)"/>
+    <line x1="595" y1="700" x2="612" y2="482" marker-end="url(#arr)"/>
+  </g>
+  <g stroke="#7a8a99" stroke-width="1.6" fill="none" stroke-dasharray="7 4">
+    <line x1="448" y1="458" x2="270" y2="490" marker-end="url(#arr)"/>
+    <line x1="948" y1="700" x2="712" y2="452" marker-end="url(#arr)"/>
+  </g>
+
+  <!-- flow labels -->
+  <g font-size="12" fill="#333333">
+    <text x="285" y="332">ввод заказа</text>
+    <text x="285" y="347">в едином формате</text>
+    <text x="800" y="215">список свободных заказов,</text>
+    <text x="800" y="230">детали забронированного</text>
+    <text x="852" y="262">выбор, бронь,</text>
+    <text x="852" y="277">результат действий</text>
+    <text x="796" y="330">переназначение</text>
+    <text x="790" y="430">статусы заказов и курьеров</text>
+    <text x="760" y="484">регистрация курьеров,</text>
+    <text x="760" y="499">права доступа</text>
+    <text x="410" y="560" text-anchor="end">поступившие заказы;</text>
+    <text x="410" y="575" text-anchor="end">доставленные заказы</text>
+    <text x="640" y="600">начисленная оплата</text>
+    <text x="640" y="615">курьерам</text>
+    <text x="170" y="438" fill="#595959">информация о доставке (гипотеза)</text>
+    <text x="880" y="540" fill="#595959">адреса, маршрут</text>
+  </g>
+
+  <!-- legend -->
+  <g transform="translate(40,620)" font-size="12" fill="#333333">
+    <rect x="0" y="0" width="330" height="136" rx="8" fill="#FAFBFC" stroke="#c9d3dd"/>
+    <text x="14" y="24" font-weight="bold" fill="#16324F">Обозначения</text>
+    <line x1="14" y1="42" x2="54" y2="42" stroke="#16324F" stroke-width="1.8" marker-end="url(#arr)"/>
+    <text x="64" y="46">поток данных / управляющее воздействие по ТЗ</text>
+    <line x1="14" y1="66" x2="54" y2="66" stroke="#7a8a99" stroke-width="1.6" stroke-dasharray="7 4" marker-end="url(#arr)"/>
+    <text x="64" y="70">плановая интеграция / гипотеза — требует</text>
+    <text x="64" y="85">согласования с заказчиком</text>
+    <text x="14" y="108" fill="#595959">Основатели (st00100) потоков данных с системой</text>
+    <text x="14" y="123" fill="#595959">не имеют — на диаграмме не показаны.</text>
+  </g>
+</svg>
